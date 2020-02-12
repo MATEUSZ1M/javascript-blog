@@ -24,7 +24,9 @@ for(let activeArticle of activeArticles){
     activeArticle.classList.remove('active');
 }
 /* [IN PROGRESS]get "href" attribute from the clicked link */
+const ArticleSelector = clickedElement.getAttribute('href');
 
+console.log(ArticleSelector);
 /* find the correct article using the selector (value of "href" attribute) */
 
 /* add class "active to the correct article" */
