@@ -23,12 +23,14 @@ const activeArticles = document.querySelectorAll('.posts article.active');
 for(let activeArticle of activeArticles){
     activeArticle.classList.remove('active');
 }
-/* [IN PROGRESS]get "href" attribute from the clicked link */
-const ArticleSelector = clickedElement.getAttribute('href');
+/* [DONE] get "href" attribute from the clicked link */
+const articleSelector = clickedElement.getAttribute('href');
 
-console.log(ArticleSelector);
-/* find the correct article using the selector (value of "href" attribute) */
+console.log(articleSelector);
+/* [IN PROGRESS]find the correct article using the selector (value of "href" attribute) */
+const targetArticle = document.querySelector(articleSelector);
 
+console.log(targetArticle);
 /* add class "active to the correct article" */
 
 }
