@@ -1,5 +1,5 @@
 'use scrict';
-{
+{//dlaczego niektóre bloki kodu są dodatkowo w nawiasach ?
     const titleClickHandler = function (event) {
         event.preventDefault();
         console.log('Link was clicked!')
@@ -18,7 +18,7 @@
 
         console.log('clickedElement (with plus): ' + clickedElement);
         /* [DONE] remove class "active" from all articles */
-        const activeArticles = document.querySelectorAll('.posts article.active');
+        const activeArticles = document.querySelectorAll('.posts article.active'); // dlaczego to co jest w nawiasie
 
         for (let activeArticle of activeArticles) {
             activeArticle.classList.remove('active');
@@ -39,7 +39,7 @@
 
     const links = document.querySelectorAll('.titles a');
 
-    for (let link of links) {
+    for (let link of links) {// jak działają te pętle ???
         link.addEventListener('click', titleClickHandler);
     }
 
@@ -47,15 +47,21 @@
         optTitleSelector = '.post-title',
         optTitleListSelector = '.titles';
 
-    function generateTitleLinks() {
+    function generateTitleLinks() {//dlaczego niektóre funkcje nie mają nic w nawiasach 
 
-        /*[IN PROGRESS] remove contents of titleList */
+        /*[DONE]remove contents of titleList */
         const titleList = document.querySelector(optTitleListSelector);
         titleList.innerHTML = '';
-        console.log(titleList)
-        /* for each article */
+        console.log(titleList)// czy console.log musi być w tej samej funkcji żeby zadziałał jakie warunki muszą być spełnionie żeby działał
+        /*  [DONE] for each article */
+        const articles = optArticleSelector;
 
-        /* get the article id */
+        for(let article of articles ){
+            console.log(articles)
+        }
+        
+        /*[IN PROGRESS] get the article id */
+       
 
         /* find the title element */
 
