@@ -61,10 +61,11 @@ function generateTitleLinks() {
         console.log("articule title: " + articleTitle)
         /* get the title from the title element */
 
-        /* [IN PROGRESS]create HTML of the link */
+        /* [DONE]create HTML of the link */
         const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
         console.log(linkHTML)
-        /* insert link into titleList */
+        /* [DONE] a */
+        titleList.innerHTML = titleList.innerHTML + linkHTML;
 
     }
     
