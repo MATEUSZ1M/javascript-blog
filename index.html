@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="blog">
         <div class="container">
-            <h1 class="logo">my blog</h1>
             <main class="wrapper">
-                <aside class="sidebar">
+                
+                <aside class="sidebar sidebar-left">
+                    <div class="header">
+                        <h1 class="logo">my blog</h1>
+                    </div>
                     <h2 class="section-title">All posts</h2>
                     <ul class="list titles">
-                        
+
                     </ul>
                 </aside>
                 <section class="posts">
+                    <div class="intro">
+                        <h2>Intro</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec mauris viverra, vestibulum
+                            augue vitae, semper ligula. Maecenas in iaculis massa. Suspendisse arcu purus, gravida
+                            Cras in mollis dui. Integer est velit, convallis vitae mi sit amet, pulvinar
+                            mattis risus. In ac pellentesque libero. Curabitur id urna finibus, venenatis dolor non,
+                            porta neque.</p>
+                    </div>
                     <article class="post active" id="article-1">
                         <h3 class="post-title">Article 1</h3>
                         <p class="post-author">by Marion Berry</p>
                         <div class="post-content">
+                           
+                                <img src="/images/header.jpg" alt="photo">
+                            
                             <p>Duis non dolor efficitur erat interdum fringilla a lobortis dolor. Aenean in massa
                                 viverra, pretium augue et, imperdiet diam. Proin varius vitae lectus ut suscipit. Etiam
                                 metus lacus, molestie at ante eget, gravida tristique metus. Morbi finibus elit mi, ut
@@ -37,7 +52,7 @@
                                 nisl vel, venenatis magna. Sed efficitur egestas purus, eu fermentum leo sodales in.</p>
                         </div>
                         <div class="post-tags">
-                            <p><strong>Tags:</strong></p>
+                            <p><strong><i class="fas fa-tags"></i></strong></p>
                             <ul class="list list-horizontal">
                                 <li><a href="#">design</a></li>
                                 <li><a href="#">tutorials</a></li>
@@ -262,7 +277,26 @@
                         </div>
                     </article>
                 </section>
-                <aside class="sidebar">
+                <aside class="sidebar side-bar-right">
+                    <div class="search-widget">
+                        <input type="text">
+                        <button type="submit" placeholder="search"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="about-widget">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="widget-content">
+                            <img src="images/face.png" >
+                            <p>Rhoncus purus nulla, non auctor lacus placerat ut. Aliquam condimentum eget magna ac
+                                gravida. Etiam egestas faucibus urna et finibus.</p>
+                        </div>
+                    </div>
+                    <div class="social-widget">
+                        <h2 class="section-title">Social media</h2>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
                     <h2 class="section-title">Tags</h2>
                     <ul class="list tags">
                         <li><a href="#">design</a> <span>(6)</span></li>
@@ -298,6 +332,9 @@
             </main>
         </div>
     </div>
+    <footer>
+        <p> &copy;Copy rights 2020</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

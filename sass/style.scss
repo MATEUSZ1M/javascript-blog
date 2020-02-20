@@ -9,6 +9,11 @@ $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
+$transition: all 0.3s;
+
+div {
+  border: solid 1px;
+}
 /* Global */
 
 *, *::before, *::after {
@@ -22,10 +27,10 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
+  margin: 0;
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -45,23 +50,23 @@ body {
 
 .wrapper {
   display: flex;
-  margin-left: 10px;
 }
 
 .sidebar {
-  flex: 1 0 0;
-}
-
-.posts {
   flex: 2 0 0;
 }
 
-.sidebar, .posts {
+.sidebar-left{
+  background: lightblue;
+}
+
+.posts {
+  flex: 6 0 0;
+}
+
+.posts {
   background: $color-light;
-  margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
-  border-radius: 5px;
 }
 
 /* Logo */
@@ -69,10 +74,12 @@ body {
 .logo {
   font-family: $font-logo;
   font-weight: 400;
-  font-size: 104px;
+  font-size: 90px;
   line-height: 1;
   text-align: center;
+  color: $color-dark;
 }
+
 
 /* Lists */
 
@@ -80,6 +87,13 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  li{
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: $color-dark;
+  }
   .active {
     font-weight: bold;
   }
@@ -98,15 +112,28 @@ body {
     margin-bottom: 12px;
   }
 }
-
+/* intro */
+.intro{
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 1.8px;
+}
 /* Post */
 
-.post {
+.post{
   display: none;
+  font-size: 18px;
   &.active {
     display: block;
   }
 }
+
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
 
 .post-author {
   font-style: italic;
@@ -116,5 +143,63 @@ body {
   display: flex;
   p {
     margin: 0 10px 0 0;
+  }
+}
+
+//search
+.search-widget{
+  border: 1px solid;
+  display: flex;
+  input{
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+  }
+  button{
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+}
+
+
+.sidebar{
+  padding: 50px 100px;
+}
+
+.widget-content{
+  text-align: center;
+  padding: 20px;
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+.social-widget{
+  i{
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    background: $color-dark;
+    color: $color-light;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    transition: $transition;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+footer{
+  height: 50px;
+  padding: 15px 0;
+  background: $color-dark;
+  p{
+    margin: 0 auto;
+    color: $color-light;
+    text-align: center;
   }
 }
