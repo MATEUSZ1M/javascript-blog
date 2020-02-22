@@ -15,10 +15,6 @@ body {
   margin: 0;
 }
 
-div {
-  border: 1px solid;
-}
-
 .container {
   margin: 0 auto;
 }
@@ -66,13 +62,12 @@ div {
   font-family: "Sacramento", cursive;
   font-weight: 400;
   font-size: 90px;
-  text-align: center;
   margin: 0;
   color: #444;
   position: absolute;
-  top: 10vh;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -10vh);
+  transform: translate(-50%, -5%);
 }
 
 .header {
@@ -119,31 +114,23 @@ div {
 /* Post */
 .posts {
   position: relative;
-  overflow: visible;
-  height: auto;
 }
 
 .post {
   font-size: 18px;
-  transition: all 0.4s;
-  opacity: 0;
   position: absolute;
-  z-index: 1;
+  top: 0;
   height: 0;
-  overflow: hidden;
+  opacity: 0;
+  transition: 1s ease;
 }
 
 .post.active {
   opacity: 1;
-  z-index: 2;
+  position: relative;
+  top: 0;
   height: auto;
-}
-
-img {
-  width: 100%;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: #fff;
 }
 
 .post-author {
@@ -202,7 +189,7 @@ img {
   text-align: center;
   border-radius: 50%;
   margin: 10px;
-  transition: all 0.4s;
+  transition: 1s ease;
 }
 
 .social-widget i:hover {
