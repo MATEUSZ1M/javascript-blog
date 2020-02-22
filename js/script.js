@@ -81,11 +81,12 @@ function generateTags() {
     /*[DONE] find tags wrapper */
     const tagList = article.querySelector(optArticleTagsSelector);
     console.log(tagList);
-    /* [IN PROGRESS]make html variable with empty string */
+    /* [DONE]make html variable with empty string */
     let html = tagList.innerHTML = '';
     console.log(html);
-    /* get tags from data-tags attribute */
-    
+    /* [IN PROGRESS] get tags from data-tags attribute */
+    const articleTags = article.getAttribute('data-tags');
+    console.log(articleTags);
     /* split tags into array */
 
     /* START LOOP: for each tag */
