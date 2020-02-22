@@ -84,12 +84,13 @@ function generateTags() {
     /* [DONE]make html variable with empty string */
     let html = tagList.innerHTML = '';
     console.log(html);
-    /* [IN PROGRESS] get tags from data-tags attribute */
+    /* [DONE] get tags from data-tags attribute */
     const articleTags = article.getAttribute('data-tags');
     console.log(articleTags);
-    /* split tags into array */
-
-    /* START LOOP: for each tag */
+    /*[DONE] */
+    const articleTagsArray  = articleTags.split('');
+    console.log(articleTagsArray);
+    /* [IN PROGRESS] START LOOP: for each tag */
 
     /* generate HTML of the link */
 
