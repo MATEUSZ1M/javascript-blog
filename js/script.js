@@ -167,10 +167,11 @@ function generateAuthors() {
   /*[DONE] find all aricles */
   const articles = document.querySelectorAll(optArticleSelector);
   console.log(articles);
-  /* [IN PROGRESS]START LOOP: for every article: */
+  /* [DONE] START LOOP: for every article: */
   for (let article of articles) {
-    /* find authors wrapper */
-
+    /*[IN PROGRESS] find authors wrapper */
+    const authorList = article.querySelector(optAuthorListSelector);
+    console.log(authorList)
     /*make html variable with empty string */
 
     /* get authors from data-authors attribute */
