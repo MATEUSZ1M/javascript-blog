@@ -115,7 +115,7 @@ function tagClickHandler(event){
   console.log('tag was clicked');
   console.log(event);
 
-  /*[IN PROGRESS] make new constant named "clickedElement" and give it the value of "this" */
+  /* [DONE] make new constant named "clickedElement" and give it the value of "this" */
   const clickedElement = this;
   console.log(clickedElement);
   /* make a new constant "href" and read the attribute "href" of the clicked element */
@@ -142,8 +142,9 @@ function tagClickHandler(event){
 }
 
 function addClickListenersToTags(){
-  /* find all links to tags */
-
+  /* [IN PROGRESS] find all links to tags */
+  const links = document.querySelectorAll(optTagLinkSelector);
+  console.log(links);
   /* START LOOP: for each link */
 
     /* add tagClickHandler as event listener for that link */
