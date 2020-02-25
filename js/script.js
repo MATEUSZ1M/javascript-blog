@@ -174,11 +174,12 @@ function generateAuthors() {
     console.log(authorList);
     /*[DONE] make html variable with empty string */
     let html = '';
-    /* [IN PROGRESS] get authors from data-authors attribute */
+    /* [DONE] get authors from data-authors attribute */
     const authors = article.getAttribute('data-author');
     console.log('author: ' + authors);
-    /* generate HTML of the link */
-
+    /*[IN PROGRESS] generate HTML of the link */
+    const linkAuthor = '<a href="#-' + authors + '"><span>' + authors + '</span></a>';
+    console.log(linkAuthor);
     /* add generated code to html variable */
 
     /* insert HTML of all the links into the tags wrapper */
