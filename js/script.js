@@ -165,7 +165,8 @@ addClickListenersToTags();
 
 function generateAuthors() {
   /*[IN PROGRESS] find all aricles */
-
+  const articles = document.querySelectorAll(optArticleSelector);
+  console.log(articles);
   /* START LOOP: for every article: */
 
   /* find authors wrapper */
