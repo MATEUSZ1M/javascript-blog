@@ -169,11 +169,11 @@ function generateAuthors() {
   console.log(articles);
   /* [DONE] START LOOP: for every article: */
   for (let article of articles) {
-    /*[IN PROGRESS] find authors wrapper */
+    /* [DONE] find authors wrapper */
     const authorList = article.querySelector(optAuthorListSelector);
-    console.log(authorList)
-    /*make html variable with empty string */
-
+    console.log(authorList);
+    /*[IN PROGRESS] make html variable with empty string */
+    let html = '';
     /* get authors from data-authors attribute */
 
     /* generate HTML of the link */
