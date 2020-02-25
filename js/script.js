@@ -164,25 +164,25 @@ function addClickListenersToTags() {
 addClickListenersToTags();
 
 function generateAuthors() {
-  /*[IN PROGRESS] find all aricles */
+  /*[DONE] find all aricles */
   const articles = document.querySelectorAll(optArticleSelector);
   console.log(articles);
-  /* START LOOP: for every article: */
+  /* [IN PROGRESS]START LOOP: for every article: */
+  for (let article of articles) {
+    /* find authors wrapper */
 
-  /* find authors wrapper */
+    /*make html variable with empty string */
 
-  /*make html variable with empty string */
+    /* get authors from data-authors attribute */
 
-  /* get authors from data-authors attribute */
+    /* generate HTML of the link */
 
-  /* generate HTML of the link */
+    /* add generated code to html variable */
 
-  /* add generated code to html variable */
+    /* insert HTML of all the links into the tags wrapper */
 
-  /* insert HTML of all the links into the tags wrapper */
-
-  /* END LOOP: for every article: */
-
+    /* END LOOP: for every article: */
+  }
 }
 
 generateAuthors();
