@@ -124,17 +124,19 @@ body {
   position: relative;
 }
 .post{
-  font-size: 18px;
+  font-size: 0;
   position: absolute;
   top: 0;
   height: 0;
   opacity: 0;
   transition: $transition;
   &.active {
+    font-size: 18px;
+    background-color: $color-light;
     opacity: 1;
     position: relative;
     top: 0;
-    height: auto;
+    height: 100%;
     background: $color-light;
   }
 }
