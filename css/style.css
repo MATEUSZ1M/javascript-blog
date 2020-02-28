@@ -88,7 +88,6 @@ body {
 
 .list a {
   text-decoration: none;
-  color: #444;
 }
 
 .list .active {
@@ -208,5 +207,32 @@ footer p {
   margin: 0 auto;
   color: #fff;
   text-align: center;
+}
+
+/*tags cloud*/
+.tag-size-1 {
+  font-size: 12px;
+  color: red;
+}
+
+.tag-size-2 {
+  font-size: 14px;
+  color: blue;
+}
+
+.tag-size-3 {
+  font-size: 16px;
+  color: purple;
+}
+
+.tag-size-4 {
+  font-size: 18px;
+  color: tomato;
+}
+
+.tag-size-5 {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
