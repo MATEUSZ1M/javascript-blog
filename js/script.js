@@ -37,7 +37,7 @@ const titleClickHandler = function (event) {
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
-  optTagLinkSelector = '.post-tags .list  a',
+  optTagLinkSelector = 'a[href^="#tag-"]',
   optArticleTagsSelector = '.post-tags .list',
   optAuthorSelector = '.post-author',
   // optTagsListSelector = '.tags.list',
