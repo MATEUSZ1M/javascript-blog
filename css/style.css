@@ -15,6 +15,11 @@ body {
   margin: 0;
 }
 
+body a {
+  text-decoration: none;
+  color: #444;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -29,7 +34,6 @@ body {
 .section-title span {
   text-transform: none;
   font-weight: 400;
-  color: #777777;
 }
 
 /* Layout */
@@ -233,6 +237,5 @@ footer p {
 .tag-size-5 {
   font-size: 20px;
   color: green;
-  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

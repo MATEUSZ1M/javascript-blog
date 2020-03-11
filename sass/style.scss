@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
-
 /* Variables */
-
 $color-light: #fff;
 $color-dark: #444;
-
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
@@ -24,6 +21,11 @@ body {
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
+
+  a{
+    text-decoration: none;
+    color: $color-dark;
+  }
 }
 
 .container {
@@ -35,10 +37,10 @@ body {
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+
   span {
     text-transform: none;
     font-weight: 400;
-    color: lighten($color-dark, 20%);
   }
 }
 
@@ -88,12 +90,15 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   li{
     font-size: 20px;
   }
+
   a{
     text-decoration: none;
   }
+
   .active {
     font-weight: bold;
   }
@@ -122,6 +127,7 @@ body {
 .posts{
   position: relative;
 }
+
 .post{
   font-size: 0;
   position: absolute;
@@ -129,6 +135,7 @@ body {
   height: 0;
   opacity: 0;
   transition: $transition;
+
   &.active {
     font-size: 18px;
     background-color: $color-light;
@@ -146,6 +153,7 @@ body {
 
 .post-tags {
   display: flex;
+
   p {
     margin: 0 10px 0 0;
   }
@@ -155,11 +163,13 @@ body {
 .search-widget{
   border: 1px solid;
   display: flex;
+
   input{
     font-size: 20px;
     border: none;
     padding: 10px;
   }
+
   button{
     background: none;
     border: none;
@@ -175,12 +185,14 @@ body {
 .widget-content{
   text-align: center;
   padding: 20px;
+
   img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
   }
 }
+
 .social-widget{
   i{
     font-size: 24px;
@@ -193,6 +205,7 @@ body {
     border-radius: 50%;
     margin: 10px;
     transition: $transition;
+
     &:hover{
       transform: scale(1.2);
     }
@@ -203,6 +216,7 @@ footer{
   height: 50px;
   padding: 15px 0;
   background: $color-dark;
+
   p{
     margin: 0 auto;
     color: $color-light;
@@ -224,14 +238,15 @@ footer{
 
 .tag-size-3{
   font-size: 16px;
-  color:purple;
+  color: purple;
 }
+
 .tag-size-4{
   font-size: 18px;
   color: tomato;
 }
+
 .tag-size-5{
   font-size: 20px;
   color: green;
-  font-weight: bold;
 }
