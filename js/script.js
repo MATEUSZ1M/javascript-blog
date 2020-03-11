@@ -73,8 +73,7 @@ function generateTitleLinks(customSelector = '') {
     const articleTitle = article.querySelector(optTitleSelector).innerHTML;
     console.log('articule title: ' + articleTitle);
     /* [IN PROGRESS]create HTML of the link */
-    const linkHTMLData = { id: articleId, title: articleTitle };
-    const linkHTML = templates.articleLink(linkHTMLData);
+    const linkHTML = templates.articleLink({ id: articleId, title: articleTitle });
     /* [DONE] insert link into titleList */
     titleList.innerHTML = titleList.innerHTML + linkHTML;
   }
@@ -138,9 +137,7 @@ function generateTags() {
     /*  [IN PROGRESS] START LOOP: for each tag */
     for (let tag of articleTagsArray) {
       /* [DONE] generate HTML of the link */
-      // const linkTag = '<li><a href="#tag-' + tag + '"><span>' + tag + '</span></a></li>';
-      const linkHTMLData = { tagName: tag, tagTitle: tag };
-      const linkHTML = templates.tagLink(linkHTMLData);
+      const linkHTML = templates.tagLink({ tagName: tag, tagTitle: tag });
       /*[DONE] add generated code to html variable */
       let html = linkHTML;
       console.log(html);
@@ -253,9 +250,7 @@ function generateAuthors() {
 
     for (let author of articleAuthorArray) {
       /* [DONE] generate HTML of the link */
-      // const linkAuthor = '<a href="#author-' + author + '"><span>' + author + '</span></a>';
-      const linkHTMLData = { authorName: author, authorTitle: author };
-      const linkHTML = templates.authorLink(linkHTMLData);
+      const linkHTML = templates.authorLink({ authorName: author, authorTitle: author });
       /*[DONE] add generated code to html variable */
       html = linkHTML;
       console.log(html);
