@@ -100,19 +100,6 @@ function calculateTagsParams(tags) {
   return params;
 }
 
-function calculateAuthorsParams(authors) {
-
-  for (let author in authors) {
-    console.log(author + ' is used ' + authors[author] + ' times');
-    if (authors[author] > params.max) {
-      params.max = authors[author];
-    } else if (authors[author] < params.min) {
-      params.min = authors[author];
-    }
-  }
-  return params;
-}
-
 function calculateTagClass(count, params) {
   const normalizedCount = count - params.min;
 
@@ -286,9 +273,6 @@ function generateAuthors() {
     /* END LOOP: for every article: */
   }
   const authorList = document.querySelector(optAuthorListSelector);
-
-  const authorsParams = calculateAuthorsParams(allAuthors);
-  console.log('authors params: ', authorsParams);
 
   // let allAuthorsHTML = '';
   const allAuthorsData = { authors: [] };
